@@ -1,0 +1,1132 @@
+[
+  {
+    "name": "Hawkeye",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Hawkeye.png",
+    "pool": "0"
+  },
+  {
+    "name": "MistyKnight",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MistyKnight.png",
+    "pool": "0"
+  },
+  {
+    "name": "Quicksilver",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Quicksilver.png",
+    "pool": "0"
+  },
+  {
+    "name": "Medusa",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Medusa.png",
+    "pool": "0"
+  },
+  {
+    "name": "Starlord",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Starlord.png",
+    "pool": "0"
+  },
+  {
+    "name": "Sentinel",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Sentinel.png",
+    "pool": "0"
+  },
+  {
+    "name": "Shocker",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Shocker.png",
+    "pool": "0"
+  },
+  {
+    "name": "Punisher",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Punisher.png",
+    "pool": "0"
+  },
+  {
+    "name": "Cyclops",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Cyclops.png",
+    "pool": "0"
+  },
+  {
+    "name": "TheThing",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/TheThing.png",
+    "pool": "0"
+  },
+  {
+    "name": "IronMan",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/IronMan.png",
+    "pool": "0"
+  },
+  {
+    "name": "Abomination",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Abomination.png",
+    "pool": "0"
+  },
+  {
+    "name": "Hulk",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Hulk.png",
+    "pool": "0"
+  },
+  {
+    "name": "AntMan",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/AntMan.png",
+    "pool": "1"
+  },
+  {
+    "name": "Ironheart",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Ironheart.png",
+    "pool": "1"
+  },
+  {
+    "name": "CaptainAmerica",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/CaptainAmerica.png",
+    "pool": "1"
+  },
+  {
+    "name": "JessicaJones",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/JessicaJones.png",
+    "pool": "1"
+  },
+  {
+    "name": "BlueMarvel",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/BlueMarvel.png",
+    "pool": "1"
+  },
+  {
+    "name": "Nightcrawler",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Nightcrawler.png",
+    "pool": "2"
+  },
+  {
+    "name": "SquirrelGirl",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/SquirrelGirl.png",
+    "pool": "2"
+  },
+  {
+    "name": "Colossus",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Colossus.png",
+    "pool": "2"
+  },
+  {
+    "name": "Wolfsbane",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Wolfsbane.png",
+    "pool": "2"
+  },
+  {
+    "name": "MrFantastic",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MrFantastic.png",
+    "pool": "2"
+  },
+  {
+    "name": "Groot",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Groot.png",
+    "pool": "2"
+  },
+  {
+    "name": "KaZar",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/KaZar.png",
+    "pool": "2"
+  },
+  {
+    "name": "WhiteTiger",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/WhiteTiger.png",
+    "pool": "2"
+  },
+  {
+    "name": "Gamora",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Gamora.png",
+    "pool": "2"
+  },
+  {
+    "name": "SpiderWoman",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/SpiderWoman.png",
+    "pool": "2"
+  },
+  {
+    "name": "Apocalypse",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Apocalypse.png",
+    "pool": "2"
+  },
+  {
+    "name": "Spectrum",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Spectrum.png",
+    "pool": "2"
+  },
+  {
+    "name": "Onslaught",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Onslaught.png",
+    "pool": "2"
+  },
+  {
+    "name": "Odin",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Odin.png",
+    "pool": "2"
+  },
+  {
+    "name": "Heimdall",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Heimdall.png",
+    "pool": "2"
+  },
+  {
+    "name": "Nova",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Nova.png",
+    "pool": "3"
+  },
+  {
+    "name": "RocketRaccoon",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/RocketRaccoon.png",
+    "pool": "3"
+  },
+  {
+    "name": "AmericaChavez",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/AmericaChavez.png",
+    "pool": "3"
+  },
+  {
+    "name": "Elektra",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Elektra.png",
+    "pool": "3"
+  },
+  {
+    "name": "IronFist",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/IronFist.png",
+    "pool": "3"
+  },
+  {
+    "name": "Korg",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Korg.png",
+    "pool": "3"
+  },
+  {
+    "name": "Mantis",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Mantis.png",
+    "pool": "3"
+  },
+  {
+    "name": "Uatu",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Uatu.png",
+    "pool": "3"
+  },
+  {
+    "name": "Yondu",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Yondu.png",
+    "pool": "3"
+  },
+  {
+    "name": "Blade",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Blade.png",
+    "pool": "3"
+  },
+  {
+    "name": "Angela",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Angela.png",
+    "pool": "3"
+  },
+  {
+    "name": "Carnage",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Carnage.png",
+    "pool": "3"
+  },
+  {
+    "name": "Forge",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Forge.png",
+    "pool": "3"
+  },
+  {
+    "name": "Kraven",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Kraven.png",
+    "pool": "3"
+  },
+  {
+    "name": "MrSinister",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MrSinister.png",
+    "pool": "3"
+  },
+  {
+    "name": "Wolverine",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Wolverine.png",
+    "pool": "3"
+  },
+  {
+    "name": "Angel",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Angel.png",
+    "pool": "3"
+  },
+  {
+    "name": "Armor",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Armor.png",
+    "pool": "3"
+  },
+  {
+    "name": "Cable",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Cable.png",
+    "pool": "3"
+  },
+  {
+    "name": "DoctorStrange",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/DoctorStrange.png",
+    "pool": "3"
+  },
+  {
+    "name": "Domino",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Domino.png",
+    "pool": "3"
+  },
+  {
+    "name": "Hulkbuster",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Hulkbuster.png",
+    "pool": "3"
+  },
+  {
+    "name": "MultipleMan",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MultipleMan.png",
+    "pool": "3"
+  },
+  {
+    "name": "ScarletWitch",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/ScarletWitch.png",
+    "pool": "3"
+  },
+  {
+    "name": "Lizard",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Lizard.png",
+    "pool": "3"
+  },
+  {
+    "name": "Morph",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Morph.png",
+    "pool": "3"
+  },
+  {
+    "name": "Bishop",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Bishop.png",
+    "pool": "3"
+  },
+  {
+    "name": "Cosmo",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Cosmo.png",
+    "pool": "3"
+  },
+  {
+    "name": "StrongGuy",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/StrongGuy.png",
+    "pool": "3"
+  },
+  {
+    "name": "Deathlok",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Deathlok.png",
+    "pool": "3"
+  },
+  {
+    "name": "LadySif",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/LadySif.png",
+    "pool": "3"
+  },
+  {
+    "name": "SwordMaster",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/SwordMaster.png",
+    "pool": "3"
+  },
+  {
+    "name": "MoonGirl",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MoonGirl.png",
+    "pool": "3"
+  },
+  {
+    "name": "Enchantress",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Enchantress.png",
+    "pool": "3"
+  },
+  {
+    "name": "Namor",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Namor.png",
+    "pool": "3"
+  },
+  {
+    "name": "WhiteQueen",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/WhiteQueen.png",
+    "pool": "3"
+  },
+  {
+    "name": "DevilDinosaur",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/DevilDinosaur.png",
+    "pool": "3"
+  },
+  {
+    "name": "ProfessorX",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/ProfessorX.png",
+    "pool": "3"
+  },
+  {
+    "name": "Klaw",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Klaw.png",
+    "pool": "3"
+  },
+  {
+    "name": "Sunspot",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Sunspot.png",
+    "pool": "4"
+  },
+  {
+    "name": "Agent13",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Agent13.png",
+    "pool": "4"
+  },
+  {
+    "name": "Iceman",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Iceman.png",
+    "pool": "4"
+  },
+  {
+    "name": "EbonyMaw",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/EbonyMaw.png",
+    "pool": "4"
+  },
+  {
+    "name": "Morbius",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Morbius.png",
+    "pool": "4"
+  },
+  {
+    "name": "BuckyBarnes",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/BuckyBarnes.png",
+    "pool": "4"
+  },
+  {
+    "name": "Okoye",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Okoye.png",
+    "pool": "4"
+  },
+  {
+    "name": "Scorpion",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Scorpion.png",
+    "pool": "4"
+  },
+  {
+    "name": "TheCollector",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/TheCollector.png",
+    "pool": "4"
+  },
+  {
+    "name": "Swarm",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Swarm.png",
+    "pool": "4"
+  },
+  {
+    "name": "Cloak",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Cloak.png",
+    "pool": "4"
+  },
+  {
+    "name": "Storm",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Storm.png",
+    "pool": "4"
+  },
+  {
+    "name": "Killmonger",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Killmonger.png",
+    "pool": "4"
+  },
+  {
+    "name": "Nakia",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Nakia.png",
+    "pool": "4"
+  },
+  {
+    "name": "Rhino",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Rhino.png",
+    "pool": "4"
+  },
+  {
+    "name": "Vulture",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Vulture.png",
+    "pool": "4"
+  },
+  {
+    "name": "Sabretooth",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Sabretooth.png",
+    "pool": "4"
+  },
+  {
+    "name": "Jubilee",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Jubilee.png",
+    "pool": "4"
+  },
+  {
+    "name": "ShangChi",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/ShangChi.png",
+    "pool": "4"
+  },
+  {
+    "name": "Warpath",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Warpath.png",
+    "pool": "4"
+  },
+  {
+    "name": "Hobgoblin",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Hobgoblin.png",
+    "pool": "4"
+  },
+  {
+    "name": "Leech",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Leech.png",
+    "pool": "4"
+  },
+  {
+    "name": "Sandman",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Sandman.png",
+    "pool": "4"
+  },
+  {
+    "name": "Vision",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Vision.png",
+    "pool": "4"
+  },
+  {
+    "name": "Infinaut",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Infinaut.png",
+    "pool": "4"
+  },
+  {
+    "name": "Wasp",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Wasp.png",
+    "pool": "5"
+  },
+  {
+    "name": "Yellowjacket",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Yellowjacket.png",
+    "pool": "5"
+  },
+  {
+    "name": "Hood",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Hood.png",
+    "pool": "5"
+  },
+  {
+    "name": "Bast",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Bast.png",
+    "pool": "5"
+  },
+  {
+    "name": "Deadpool",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Deadpool.png",
+    "pool": "5"
+  },
+  {
+    "name": "HumanTorch",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/HumanTorch.png",
+    "pool": "5"
+  },
+  {
+    "name": "MariaHill",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MariaHill.png",
+    "pool": "5"
+  },
+  {
+    "name": "MBaku",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MBaku.png",
+    "pool": "5"
+  },
+  {
+    "name": "Quinjet",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Quinjet.png",
+    "pool": "5"
+  },
+  {
+    "name": "Zero",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Zero.png",
+    "pool": "5"
+  },
+  {
+    "name": "Titania",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Titania.png",
+    "pool": "5"
+  },
+  {
+    "name": "Dagger",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Dagger.png",
+    "pool": "5"
+  },
+  {
+    "name": "Beast",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Beast.png",
+    "pool": "5"
+  },
+  {
+    "name": "Daredevil",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Daredevil.png",
+    "pool": "5"
+  },
+  {
+    "name": "Dazzler",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Dazzler.png",
+    "pool": "5"
+  },
+  {
+    "name": "Goose",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Goose.png",
+    "pool": "5"
+  },
+  {
+    "name": "Hazmat",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Hazmat.png",
+    "pool": "5"
+  },
+  {
+    "name": "MasterMold",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MasterMold.png",
+    "pool": "5"
+  },
+  {
+    "name": "Mojo",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Mojo.png",
+    "pool": "5"
+  },
+  {
+    "name": "Psylocke",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Psylocke.png",
+    "pool": "5"
+  },
+  {
+    "name": "ShadowKing",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/ShadowKing.png",
+    "pool": "5"
+  },
+  {
+    "name": "BaronMordo",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/BaronMordo.png",
+    "pool": "5"
+  },
+  {
+    "name": "Falcon",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Falcon.png",
+    "pool": "5"
+  },
+  {
+    "name": "InvisibleWoman",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/InvisibleWoman.png",
+    "pool": "5"
+  },
+  {
+    "name": "Kingpin",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Kingpin.png",
+    "pool": "5"
+  },
+  {
+    "name": "Quake",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Quake.png",
+    "pool": "5"
+  },
+  {
+    "name": "ColleenWing",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/ColleenWing.png",
+    "pool": "5"
+  },
+  {
+    "name": "Mysterio",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Mysterio.png",
+    "pool": "5"
+  },
+  {
+    "name": "Maximus",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Maximus.png",
+    "pool": "5"
+  },
+  {
+    "name": "GreenGoblin",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/GreenGoblin.png",
+    "pool": "5"
+  },
+  {
+    "name": "Cerebro",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Cerebro.png",
+    "pool": "5"
+  },
+  {
+    "name": "Mystique",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Mystique.png",
+    "pool": "5"
+  },
+  {
+    "name": "Patriot",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Patriot.png",
+    "pool": "5"
+  },
+  {
+    "name": "Brood",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Brood.png",
+    "pool": "5"
+  },
+  {
+    "name": "Electro",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Electro.png",
+    "pool": "5"
+  },
+  {
+    "name": "Magik",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Magik.png",
+    "pool": "5"
+  },
+  {
+    "name": "NegasonicTeenageWarhead",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/NegasonicTeenageWarhead.png",
+    "pool": "5"
+  },
+  {
+    "name": "Rogue",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Rogue.png",
+    "pool": "5"
+  },
+  {
+    "name": "Shanna",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Shanna.png",
+    "pool": "5"
+  },
+  {
+    "name": "SilverSurfer",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/SilverSurfer.png",
+    "pool": "5"
+  },
+  {
+    "name": "BlackWidow",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/BlackWidow.png",
+    "pool": "5"
+  },
+  {
+    "name": "Crystal",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Crystal.png",
+    "pool": "5"
+  },
+  {
+    "name": "Debrii",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Debrii.png",
+    "pool": "5"
+  },
+  {
+    "name": "Gambit",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Gambit.png",
+    "pool": "5"
+  },
+  {
+    "name": "Juggernaut",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Juggernaut.png",
+    "pool": "5"
+  },
+  {
+    "name": "LukeCage",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/LukeCage.png",
+    "pool": "5"
+  },
+  {
+    "name": "MoonKnight",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MoonKnight.png",
+    "pool": "5"
+  },
+  {
+    "name": "Rockslide",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Rockslide.png",
+    "pool": "5"
+  },
+  {
+    "name": "Sauron",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Sauron.png",
+    "pool": "5"
+  },
+  {
+    "name": "Venom",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Venom.png",
+    "pool": "5"
+  },
+  {
+    "name": "AgentCoulson",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/AgentCoulson.png",
+    "pool": "5"
+  },
+  {
+    "name": "Thor",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Thor.png",
+    "pool": "5"
+  },
+  {
+    "name": "Ghost",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Ghost.png",
+    "pool": "5"
+  },
+  {
+    "name": "Polaris",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Polaris.png",
+    "pool": "5"
+  },
+  {
+    "name": "SpiderMan",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/SpiderMan.png",
+    "pool": "5"
+  },
+  {
+    "name": "Viper",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Viper.png",
+    "pool": "5"
+  },
+  {
+    "name": "Wave",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Wave.png",
+    "pool": "5"
+  },
+  {
+    "name": "MrNegative",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MrNegative.png",
+    "pool": "5"
+  },
+  {
+    "name": "Dracula",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Dracula.png",
+    "pool": "5"
+  },
+  {
+    "name": "Shuri",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Shuri.png",
+    "pool": "5"
+  },
+  {
+    "name": "SuperSkrull",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/SuperSkrull.png",
+    "pool": "5"
+  },
+  {
+    "name": "Wong",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Wong.png",
+    "pool": "5"
+  },
+  {
+    "name": "GhostRider",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/GhostRider.png",
+    "pool": "5"
+  },
+  {
+    "name": "AbsorbingMan",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/AbsorbingMan.png",
+    "pool": "5"
+  },
+  {
+    "name": "Rescue",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Rescue.png",
+    "pool": "5"
+  },
+  {
+    "name": "CaptainMarvel",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/CaptainMarvel.png",
+    "pool": "5"
+  },
+  {
+    "name": "Drax",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Drax.png",
+    "pool": "5"
+  },
+  {
+    "name": "Lockjaw",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Lockjaw.png",
+    "pool": "5"
+  },
+  {
+    "name": "MilesMorales",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MilesMorales.png",
+    "pool": "5"
+  },
+  {
+    "name": "NickFury",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/NickFury.png",
+    "pool": "5"
+  },
+  {
+    "name": "OmegaRed",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/OmegaRed.png",
+    "pool": "5"
+  },
+  {
+    "name": "Stegron",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Stegron.png",
+    "pool": "5"
+  },
+  {
+    "name": "Hellcow",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Hellcow.png",
+    "pool": "5"
+  },
+  {
+    "name": "Sentry",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Sentry.png",
+    "pool": "5"
+  },
+  {
+    "name": "BlackCat",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/BlackCat.png",
+    "pool": "5"
+  },
+  {
+    "name": "Attuma",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Attuma.png",
+    "pool": "5"
+  },
+  {
+    "name": "Crossbones",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Crossbones.png",
+    "pool": "5"
+  },
+  {
+    "name": "TyphoidMary",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/TyphoidMary.png",
+    "pool": "5"
+  },
+  {
+    "name": "Taskmaster",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Taskmaster.png",
+    "pool": "5"
+  },
+  {
+    "name": "Valkyrie",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Valkyrie.png",
+    "pool": "5"
+  },
+  {
+    "name": "BlackPanther",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/BlackPanther.png",
+    "pool": "5"
+  },
+  {
+    "name": "Sera",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Sera.png",
+    "pool": "5"
+  },
+  {
+    "name": "AdamWarlock",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/AdamWarlock.png",
+    "pool": "5"
+  },
+  {
+    "name": "Ronan",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Ronan.png",
+    "pool": "5"
+  },
+  {
+    "name": "BlackBolt",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/BlackBolt.png",
+    "pool": "5"
+  },
+  {
+    "name": "Stature",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Stature.png",
+    "pool": "5"
+  },
+  {
+    "name": "JaneFoster",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/JaneFoster.png",
+    "pool": "5"
+  },
+  {
+    "name": "Aero",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Aero.png",
+    "pool": "5"
+  },
+  {
+    "name": "DoctorOctopus",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/DoctorOctopus.png",
+    "pool": "5"
+  },
+  {
+    "name": "RedSkull",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/RedSkull.png",
+    "pool": "5"
+  },
+  {
+    "name": "ArnimZola",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/ArnimZola.png",
+    "pool": "5"
+  },
+  {
+    "name": "Leader",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Leader.png",
+    "pool": "5"
+  },
+  {
+    "name": "DrDoom",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/DrDoom.png",
+    "pool": "5"
+  },
+  {
+    "name": "Hela",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Hela.png",
+    "pool": "5"
+  },
+  {
+    "name": "Ultron",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Ultron.png",
+    "pool": "5"
+  },
+  {
+    "name": "Helicarrier",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Helicarrier.png",
+    "pool": "5"
+  },
+  {
+    "name": "SheHulk",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/SheHulk.png",
+    "pool": "5"
+  },
+  {
+    "name": "Orka",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Orka.png",
+    "pool": "5"
+  },
+  {
+    "name": "Magneto",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Magneto.png",
+    "pool": "5"
+  },
+  {
+    "name": "AgathaHarkness",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/AgathaHarkness.png",
+    "pool": "5"
+  },
+  {
+    "name": "Giganto",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Giganto.png",
+    "pool": "5"
+  },
+  {
+    "name": "Destroyer",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Destroyer.png",
+    "pool": "5"
+  },
+  {
+    "name": "Death",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Death.png",
+    "pool": "5"
+  },
+  {
+    "name": "SpiderHam",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/SpiderHam.png",
+    "pool": "6"
+  },
+  {
+    "name": "Snowguard",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Snowguard.png",
+    "pool": "6"
+  },
+  {
+    "name": "Zabu",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Zabu.png",
+    "pool": "6"
+  },
+  {
+    "name": "HitMonkey",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/HitMonkey.png",
+    "pool": "6"
+  },
+  {
+    "name": "Darkhawk",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Darkhawk.png",
+    "pool": "6"
+  },
+  {
+    "name": "Nimrod",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Nimrod.png",
+    "pool": "6"
+  },
+  {
+    "name": "Legion",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Legion.png",
+    "pool": "6"
+  },
+  {
+    "name": "Modok",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Modok.png",
+    "pool": "6"
+  },
+  {
+    "name": "SpiderMan2099",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/SpiderMan2099.png",
+    "pool": "6"
+  },
+  {
+    "name": "Knull",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Knull.png",
+    "pool": "6"
+  },
+  {
+    "name": "KittyPryde",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/KittyPryde.png",
+    "pool": "7"
+  },
+  {
+    "name": "Nebula",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Nebula.png",
+    "pool": "7"
+  },
+  {
+    "name": "HowardTheDuck",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/HowardTheDuck.png",
+    "pool": "7"
+  },
+  {
+    "name": "GhostSpider",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/GhostSpider.png",
+    "pool": "7"
+  },
+  {
+    "name": "Echo",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Echo.png",
+    "pool": "7"
+  },
+  {
+    "name": "Mirage",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Mirage.png",
+    "pool": "7"
+  },
+  {
+    "name": "JeffTheBabyLandShark",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/JeffTheBabyLandShark.png",
+    "pool": "7"
+  },
+  {
+    "name": "Silk",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Silk.png",
+    "pool": "7"
+  },
+  {
+    "name": "JeanGrey",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/JeanGrey.png",
+    "pool": "7"
+  },
+  {
+    "name": "HighEvolutionary",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/HighEvolutionary.png",
+    "pool": "7"
+  },
+  {
+    "name": "ThePhoenixForce",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/ThePhoenixForce.png",
+    "pool": "7"
+  },
+  {
+    "name": "IronLad",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/IronLad.png",
+    "pool": "7"
+  },
+  {
+    "name": "Kang",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Kang.png",
+    "pool": "7"
+  },
+  {
+    "name": "Galactus",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Galactus.png",
+    "pool": "7"
+  },
+  {
+    "name": "LivingTribunal",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/LivingTribunal.png",
+    "pool": "7"
+  },
+  {
+    "name": "Thanos",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Thanos.png",
+    "pool": "7"
+  }
+]
