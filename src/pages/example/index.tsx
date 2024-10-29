@@ -4,7 +4,7 @@ import { groupedCards, groupedCardsTitle } from "@/utils/utils";
 import { useState } from "react";
 
 export default function Home() {
-  const [groupBy, setGroupBy] = useState("pool");
+  const [groupBy, setGroupBy] = useState("tier");
   const sortedGroups = groupedCards(
     groupBy
   );
