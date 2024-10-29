@@ -4,7 +4,7 @@ import { CardStateEnum, useCardState } from "@/hooks/cards";
 import { useShallow } from "zustand/shallow";
 import { useCallback, useMemo } from "react";
 import { Collection } from "@/utils/types";
-import { getStatusColor, getTierStars } from "@/utils/utils";
+import { getTierStars } from "@/utils/utils";
 
 export type CardProps = {
   name: string;
@@ -28,10 +28,16 @@ export default function Card({ name, src, collection, tier }: CardProps) {
     return cardStates.get(name);
   }, [cardStates, name]);
 
-  const statusColor = useMemo(
-    () => getStatusColor(status ?? CardStateEnum.NOT_OBTAINED),
-    [status]
-  );
+  const getStatusColor = (status?: CardStateEnum) => {
+    switch (status) {
+      case CardStateEnum.OBTAINED:
+        return "bg-lime-300";
+      case CardStateEnum.VARIANT_ONLY:
+        return "bg-blue-300";
+      default:
+        return "bg-white";
+    }
+  };
 
   const tierStars = useMemo(() => getTierStars(tier), [tier]);
 
@@ -50,7 +56,7 @@ export default function Card({ name, src, collection, tier }: CardProps) {
 
   return (
     <div
-      className={`w-full max-w-[180px] rounded-lg overflow-hidden shadow-lg ${statusColor}`}
+      className={`w-full max-w-[180px] rounded-lg overflow-hidden shadow-lg ${getStatusColor(status)}`}
     >
       <div
         className="aspect-[3/4] relative"

@@ -1,4 +1,3 @@
-import { CardStateEnum } from "@/hooks/cards";
 import { collection, Collection } from "@/utils/types";
 import snapCards from "@/resources/snap_cards.json";
 import tierMapping from "@/resources/tier_mapping.json";
@@ -9,17 +8,6 @@ export const poolToCollection = (pool: string): Collection => {
     return collection[0];
   }
   return collection[Number(pool) - 2];
-};
-
-export const getStatusColor = (status: CardStateEnum) => {
-  switch (status) {
-    case CardStateEnum.OBTAINED:
-      return "bg-green-300";
-    case CardStateEnum.VARIANT_ONLY:
-      return "bg-blue-300";
-    default:
-      return "bg-white";
-  }
 };
 
 export const getTierStars = (tier?: number) => {
