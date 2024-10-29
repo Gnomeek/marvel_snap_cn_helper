@@ -3,17 +3,8 @@ import CollectionTag from "@/components/CollectionTag";
 import { CardStateEnum, useCardState } from "@/hooks/cards";
 import { useShallow } from "zustand/shallow";
 import { useCallback, useMemo } from "react";
-
-const collection = ["新手", "一池", "二池", "三池", "四池", "五池"];
-
-export type Collection = (typeof collection)[number];
-
-export const Pool2Collection = (pool: string): Collection => {
-  if (["0", "1", "2"].includes(pool)) {
-    return collection[0];
-  }
-  return collection[Number(pool) - 2];
-};
+import { Collection } from "@/utils/types";
+import { getStatusColor, getTierStars } from "@/utils/utils";
 
 export type CardProps = {
   name: string;
@@ -37,21 +28,12 @@ export default function Card({ name, src, collection, tier }: CardProps) {
     return cardStates.get(name);
   }, [cardStates, name]);
 
-  const getStatusColor = () => {
-    switch (status) {
-      case CardStateEnum.OBTAINED:
-        return "bg-green-300";
-      case CardStateEnum.VARIANT_ONLY:
-        return "bg-blue-300";
-      default:
-        return "bg-white";
-    }
-  };
+  const statusColor = useMemo(
+    () => getStatusColor(status ?? CardStateEnum.NOT_OBTAINED),
+    [status]
+  );
 
-  const getTierStars = useCallback((tier?: number) => {
-    if (!tier) return "";
-    return "⭐".repeat(tier);
-  }, []);
+  const tierStars = useMemo(() => getTierStars(tier), [tier]);
 
   const onClickHandler = useCallback(
     (cardName: string) => {
@@ -68,7 +50,7 @@ export default function Card({ name, src, collection, tier }: CardProps) {
 
   return (
     <div
-      className={`w-full max-w-[180px] rounded-lg overflow-hidden shadow-lg ${getStatusColor()}`}
+      className={`w-full max-w-[180px] rounded-lg overflow-hidden shadow-lg ${statusColor}`}
     >
       <div
         className="aspect-[3/4] relative"
@@ -85,6 +67,8 @@ export default function Card({ name, src, collection, tier }: CardProps) {
             fill={true}
             style={{ objectFit: "contain" }}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            draggable={false}
+            loading="lazy"
           />
         </div>
       </div>
@@ -92,7 +76,7 @@ export default function Card({ name, src, collection, tier }: CardProps) {
         <div className="text-sm">
           <CollectionTag collection={collection} />
         </div>
-        <div className="text-sm text-right">{getTierStars(tier)}</div>
+        <div className="text-sm text-right">{tierStars}</div>
       </div>
     </div>
   );

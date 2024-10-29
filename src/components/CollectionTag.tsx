@@ -1,6 +1,6 @@
-import { Collection } from "@/components/Card";
+import { Collection } from "@/utils/types";
 
-type CollectionTagProps = {
+export type CollectionTagProps = {
   collection: Collection;
 };
 

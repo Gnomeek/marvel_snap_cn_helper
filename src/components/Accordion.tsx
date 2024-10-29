@@ -4,7 +4,7 @@ import { useShallow } from "zustand/shallow";
 import { useCardState } from "@/hooks/cards";
 import { CardProps } from "@/components/Card";
 
-type AccordionProps = {
+export type AccordionProps = {
   title: string;
   children: React.ReactNode;
   cards: CardProps[];
@@ -34,6 +34,7 @@ export default function Accordion({
             className="inline-block px-3 py-1 rounded-full text-black text-xs font-light shadow-md"
             onClick={() => {
               setObtained(cards.map((card) => card.name));
+              setIsOpen(true);
             }}
           >
             添加全部
