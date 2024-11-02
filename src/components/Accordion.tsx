@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid2";
 import Card, { CardProps } from "./Card";
 import { useMemo, useState } from "react";
 import { useShallow } from "zustand/react/shallow";
-import { useCardState } from "@/hooks/cards";
+import { CardStateEnum, useCardState } from "@/hooks/cards";
 import {
   Accordion as MuiAccordion,
   AccordionSummary,
@@ -64,11 +64,22 @@ export default function Accordion({
             size="small"
             onClick={(e) => {
               e.stopPropagation();
-              setObtained(cards.map((card) => card.name));
+              setObtained(cards.map((card) => card.name), CardStateEnum.OBTAINED);
               setIsOpen(true);
             }}
           >
             添加全部
+          </Button>
+          <Button
+            variant="contained"
+            size="small"
+            onClick={(e) => {
+              e.stopPropagation();
+              setObtained(cards.map((card) => card.name), CardStateEnum.NOT_OBTAINED);
+              setIsOpen(true);
+            }}
+          >
+            删除全部
           </Button>
         </Stack>
       </AccordionSummary>

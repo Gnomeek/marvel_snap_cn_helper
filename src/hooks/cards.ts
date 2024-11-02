@@ -21,7 +21,7 @@ type cardState = {
 
 export type cardActions = {
   setCardState: (cardName: string, state: CardStateEnum) => void;
-  setObtained: (cardNames: string[]) => void;
+  setObtained: (cardNames: string[], state: CardStateEnum) => void;
   setGroupBy: (groupBy: string) => void;
   setCollections: (collections: Collection[]) => void;
   setSelectedCardState: (selectedCardState: CardStateEnum[]) => void;
@@ -30,8 +30,25 @@ export type cardActions = {
 
 export type CardState = cardState & cardActions;
 
+const STORAGE_KEY = 'card-states';
+
+const getInitialState: () => Map<string, CardStateEnum> = () => {
+  if (typeof window === 'undefined') return new Map<string, CardStateEnum>();
+  
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (!saved) return new Map<string, CardStateEnum>();
+  
+  try {
+    const parsed = JSON.parse(saved);
+    return new Map(parsed);
+  } catch (e) {
+    console.error('Failed to parse card states:', e);
+    return new Map<string, CardStateEnum>();
+  }
+};
+
 const initialState: cardState = {
-  cardStates: new Map<string, CardStateEnum>(),
+  cardStates: getInitialState(),
   groupBy: "collection",
   selectedCollections: ["三池", "四池", "五池"],
   selectedCardState: [CardStateEnum.OBTAINED, CardStateEnum.VARIANT_ONLY, CardStateEnum.NOT_OBTAINED],
@@ -43,20 +60,35 @@ export const useCardState = create<CardState>()(
       ...initialState,
       setCardState: (cardName: string, cardState: CardStateEnum) => {
         set(
-          (state) => ({
-            cardStates: new Map(state.cardStates).set(cardName, cardState),
-          }),
+          (state) => {
+            const newStates = new Map(state.cardStates).set(cardName, cardState);
+            if (typeof window !== 'undefined') {
+              localStorage.setItem(
+                STORAGE_KEY,
+                JSON.stringify(Array.from(newStates.entries()))
+              );
+            }
+            return {
+              cardStates: newStates,
+            };
+          },
           undefined,
           "setCardState"
         );
       },
-      setObtained: (cardNames: string[]) => {
+      setObtained: (cardNames: string[], s: CardStateEnum) => {
         set(
           (state) => {
             const res = new Map(state.cardStates);
             cardNames.forEach((cardName) => {
-              res.set(cardName, CardStateEnum.OBTAINED);
+              res.set(cardName, s);
             });
+            if (typeof window !== 'undefined') {
+              localStorage.setItem(
+                STORAGE_KEY,
+                JSON.stringify(Array.from(res.entries()))
+              );
+            }
             return {
               cardStates: res,
             };

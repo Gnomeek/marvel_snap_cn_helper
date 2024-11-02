@@ -10,7 +10,7 @@ import {
   Typography,
   Chip,
 } from "@mui/material";
-import { useCallback, useMemo } from "react";
+import { useCallback, useMemo, useEffect, useState } from "react";
 import { blue, green } from "@mui/material/colors";
 import { CardStateEnum, useCardState } from "@/hooks/cards";
 import { useShallow } from "zustand/shallow";
@@ -23,6 +23,8 @@ export type CardProps = {
 };
 
 export default function Card({ name, src, collection, tier }: CardProps) {
+  const [isClient, setIsClient] = useState(false);
+
   const { cardStates, setCardState, selectedCardState } = useCardState(
     useShallow((state) => ({
       cardStates: state.cardStates,
@@ -31,29 +33,38 @@ export default function Card({ name, src, collection, tier }: CardProps) {
     }))
   );
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const status = useMemo(() => {
-    return cardStates.has(name) ? cardStates.get(name) : CardStateEnum.NOT_OBTAINED;
+    return cardStates.has(name)
+      ? cardStates.get(name)
+      : CardStateEnum.NOT_OBTAINED;
   }, [cardStates, name]);
+
+  const backgroundColor = isClient
+    ? status === CardStateEnum.OBTAINED
+      ? green[300]
+      : status === CardStateEnum.VARIANT_ONLY
+      ? blue[300]
+      : "white"
+    : "white";
 
   const styles: { [key: string]: SxProps<Theme> } = useMemo(
     () => ({
       container: {
-        backgroundColor:
-          status === CardStateEnum.OBTAINED
-            ? green[300]
-            : status === CardStateEnum.VARIANT_ONLY
-            ? blue[300]
-            : "white",
+        backgroundColor: backgroundColor,
       },
       cardContent: {
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        textAlign: "center",  
+        textAlign: "center",
       },
     }),
-    [status]
+    [backgroundColor]
   );
 
   const tierStars = useMemo(() => getTierStars(tier), [tier]);
@@ -70,16 +81,18 @@ export default function Card({ name, src, collection, tier }: CardProps) {
     },
     [cardStates, setCardState]
   );
+
   return (
-    status && selectedCardState.includes(status) && (
-    <MuiCard sx={styles.container}>
-      <CardActionArea onClick={() => onClickHandler(name)}>
-        <CardMedia component="img" image={src} alt={name}></CardMedia>
-        <CardContent sx={styles.cardContent}>
-          <Chip label={collection} size="small" color="primary" />
-          <Typography fontSize={"20px"}>{tierStars}</Typography>
-        </CardContent>
-      </CardActionArea>
+    status &&
+    selectedCardState.includes(status) && (
+      <MuiCard sx={styles.container}>
+        <CardActionArea onClick={() => onClickHandler(name)}>
+          <CardMedia component="img" image={src} alt={name}></CardMedia>
+          <CardContent sx={styles.cardContent}>
+            <Chip label={collection} size="small" color="primary" />
+            <Typography fontSize={"20px"}>{tierStars}</Typography>
+          </CardContent>
+        </CardActionArea>
       </MuiCard>
     )
   );
