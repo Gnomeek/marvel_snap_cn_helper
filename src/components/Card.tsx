@@ -23,18 +23,16 @@ export type CardProps = {
 };
 
 export default function Card({ name, src, collection, tier }: CardProps) {
-  const { cardStates, setCardState } = useCardState(
+  const { cardStates, setCardState, selectedCardState } = useCardState(
     useShallow((state) => ({
       cardStates: state.cardStates,
       setCardState: state.setCardState,
+      selectedCardState: state.selectedCardState,
     }))
   );
 
   const status = useMemo(() => {
-    if (!cardStates.has(name)) {
-      return CardStateEnum.NOT_OBTAINED;
-    }
-    return cardStates.get(name);
+    return cardStates.has(name) ? cardStates.get(name) : CardStateEnum.NOT_OBTAINED;
   }, [cardStates, name]);
 
   const styles: { [key: string]: SxProps<Theme> } = useMemo(
@@ -72,8 +70,8 @@ export default function Card({ name, src, collection, tier }: CardProps) {
     },
     [cardStates, setCardState]
   );
-
   return (
+    status && selectedCardState.includes(status) && (
     <MuiCard sx={styles.container}>
       <CardActionArea onClick={() => onClickHandler(name)}>
         <CardMedia component="img" image={src} alt={name}></CardMedia>
@@ -82,6 +80,7 @@ export default function Card({ name, src, collection, tier }: CardProps) {
           <Typography fontSize={"20px"}>{tierStars}</Typography>
         </CardContent>
       </CardActionArea>
-    </MuiCard>
+      </MuiCard>
+    )
   );
 }

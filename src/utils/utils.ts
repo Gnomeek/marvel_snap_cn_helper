@@ -27,7 +27,7 @@ export const getTierStars = (tier?: number) => {
   }
 };
 
-export const groupedCards = (groupby: string) => {
+export const groupedCards = (groupby: string, selectedCollections: Collection[]) => {
   const snapCardsWithTier = snapCards.map((card) => {
     return {
       ...card,
@@ -39,6 +39,7 @@ export const groupedCards = (groupby: string) => {
   });
   const groupedCards = snapCardsWithTier
     .filter((card) => Number(card.pool) > 4)
+    .filter((card) => selectedCollections.includes(poolToCollection(card.pool)))
     .reduce((groups, card) => {
       const groupBy = groupby === "tier" ? card.tier : card.pool;
       if (!groups[groupBy]) {
