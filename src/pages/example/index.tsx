@@ -6,14 +6,13 @@ import { Stack } from "@mui/material";
 import { useShallow } from "zustand/shallow";
 
 export default function Home() {
-  const { groupBy, selectedCollections, selectedCardState } = useCardState(
+  const { groupBy, selectedCollections } = useCardState(
     useShallow((state) => ({
       groupBy: state.groupBy,
       selectedCollections: state.selectedCollections,
-      selectedCardState: state.selectedCardState,
     }))
   );
-  const sortedGroups = groupedCards(groupBy, selectedCollections, selectedCardState);
+  const sortedGroups = groupedCards(groupBy, selectedCollections);
   return (
     <AppLayout>
     <Stack spacing={2}>

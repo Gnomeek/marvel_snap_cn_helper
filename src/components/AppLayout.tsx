@@ -19,7 +19,7 @@ import {
 import { useShallow } from "zustand/shallow";
 import { useMemo } from "react";
 import { Collection } from "@/utils/types";
-import ShareIcon from '@mui/icons-material/Share';
+import ShareIcon from "@mui/icons-material/Share";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const {

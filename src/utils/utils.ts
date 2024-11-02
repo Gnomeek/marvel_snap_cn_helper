@@ -3,6 +3,8 @@ import snapCards from "@/resources/snap_cards.json";
 import tierMapping from "@/resources/tier_mapping.json";
 import { CardProps } from "@/components/Card";
 
+export const availableCards = snapCards.map((card) => card.name);
+
 export const poolToCollection = (pool: string): Collection => {
   if (["0", "1", "2"].includes(pool)) {
     return collection[0];
