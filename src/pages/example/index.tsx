@@ -1,6 +1,6 @@
 import Accordion from "@/components/Accordion";
-import CardGallery from "@/components/CardGallery";
 import { groupedCards, groupedCardsTitle } from "@/utils/utils";
+import { Stack } from "@mui/material";
 import { useState } from "react";
 
 export default function Home() {
@@ -10,12 +10,11 @@ export default function Home() {
   );
 
   return (
-    <div className="container mx-auto px-4 space-y-4">
+    <Stack spacing={2}>
       {sortedGroups.map(([key, cards]) => (
         <Accordion key={key} title={groupedCardsTitle(groupBy, key)} cards={cards}>
-          <CardGallery cards={cards} />
         </Accordion>
       ))}
-    </div>
+    </Stack>
   );
 }

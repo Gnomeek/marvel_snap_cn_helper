@@ -1,5 +1,3 @@
-import PrelineScript from "@/components/PrelineScript";
-
 export default function RootLayout({
   children,
 }: {
@@ -8,7 +6,6 @@ export default function RootLayout({
   return (
     <>
       {children}
-      <PrelineScript />
     </>
   );
 }

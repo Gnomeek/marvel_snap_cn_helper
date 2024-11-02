@@ -1,10 +1,19 @@
-import Image from "next/image";
-import CollectionTag from "@/components/CollectionTag";
-import { CardStateEnum, useCardState } from "@/hooks/cards";
-import { useShallow } from "zustand/shallow";
-import { useCallback, useMemo } from "react";
 import { Collection } from "@/utils/types";
 import { getTierStars } from "@/utils/utils";
+import {
+  Card as MuiCard,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  SxProps,
+  Theme,
+  Typography,
+  Chip,
+} from "@mui/material";
+import { useCallback, useMemo } from "react";
+import { blue, green } from "@mui/material/colors";
+import { CardStateEnum, useCardState } from "@/hooks/cards";
+import { useShallow } from "zustand/shallow";
 
 export type CardProps = {
   name: string;
@@ -28,16 +37,26 @@ export default function Card({ name, src, collection, tier }: CardProps) {
     return cardStates.get(name);
   }, [cardStates, name]);
 
-  const getStatusColor = (status?: CardStateEnum) => {
-    switch (status) {
-      case CardStateEnum.OBTAINED:
-        return "bg-lime-300";
-      case CardStateEnum.VARIANT_ONLY:
-        return "bg-blue-300";
-      default:
-        return "bg-white";
-    }
-  };
+  const styles: { [key: string]: SxProps<Theme> } = useMemo(
+    () => ({
+      container: {
+        backgroundColor:
+          status === CardStateEnum.OBTAINED
+            ? green[300]
+            : status === CardStateEnum.VARIANT_ONLY
+            ? blue[300]
+            : "white",
+      },
+      cardContent: {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        textAlign: "center",  
+      },
+    }),
+    [status]
+  );
 
   const tierStars = useMemo(() => getTierStars(tier), [tier]);
 
@@ -55,35 +74,14 @@ export default function Card({ name, src, collection, tier }: CardProps) {
   );
 
   return (
-    <div
-      className={`w-full max-w-[180px] rounded-lg overflow-hidden shadow-lg ${getStatusColor(status)}`}
-    >
-      <div
-        className="aspect-[3/4] relative"
-        onClick={() => onClickHandler(name)}
-      >
-        <div
-          className={`w-full h-full relative ${
-            status === CardStateEnum.NOT_OBTAINED ? "grayscale" : ""
-          }`}
-        >
-          <Image
-            src={src}
-            alt={name}
-            fill={true}
-            style={{ objectFit: "contain" }}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            draggable={false}
-            loading="lazy"
-          />
-        </div>
-      </div>
-      <div className="p-2 flex justify-between items-center">
-        <div className="text-sm">
-          <CollectionTag collection={collection} />
-        </div>
-        <div className="text-sm text-right">{tierStars}</div>
-      </div>
-    </div>
+    <MuiCard sx={styles.container}>
+      <CardActionArea onClick={() => onClickHandler(name)}>
+        <CardMedia component="img" image={src} alt={name}></CardMedia>
+        <CardContent sx={styles.cardContent}>
+          <Chip label={collection} size="small" color="primary" />
+          <Typography fontSize={"20px"}>{tierStars}</Typography>
+        </CardContent>
+      </CardActionArea>
+    </MuiCard>
   );
 }

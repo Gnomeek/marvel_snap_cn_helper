@@ -1015,8 +1015,18 @@
     "pool": "6"
   },
   {
+    "name": "RavonnaRenslayer",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/RavonnaRenslayer.png",
+    "pool": "6"
+  },
+  {
     "name": "HitMonkey",
     "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/HitMonkey.png",
+    "pool": "6"
+  },
+  {
+    "name": "MobiusMMobius",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MobiusMMobius.png",
     "pool": "6"
   },
   {
@@ -1075,6 +1085,11 @@
     "pool": "7"
   },
   {
+    "name": "X23",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/X23.png",
+    "pool": "7"
+  },
+  {
     "name": "Mirage",
     "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Mirage.png",
     "pool": "7"
@@ -1105,6 +1120,16 @@
     "pool": "7"
   },
   {
+    "name": "Loki",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Loki.png",
+    "pool": "7"
+  },
+  {
+    "name": "SilverSamurai",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/SilverSamurai.png",
+    "pool": "7"
+  },
+  {
     "name": "IronLad",
     "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/IronLad.png",
     "pool": "7"
@@ -1127,6 +1152,11 @@
   {
     "name": "Thanos",
     "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Thanos.png",
+    "pool": "7"
+  },
+  {
+    "name": "Alioth",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Alioth.png",
     "pool": "7"
   }
 ]

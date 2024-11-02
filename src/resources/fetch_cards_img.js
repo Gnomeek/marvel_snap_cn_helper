@@ -9,7 +9,7 @@ function simulateClick(dataNum) {
     if (img) {
       const src = img.getAttribute('src');
       return {
-        name: img.src.split('/').pop(),
+        name: img.src.split('/').pop().replace('.png', ''),
         src: src,
         pool: dataNum
       };
@@ -27,7 +27,7 @@ let jsonString = JSON.stringify(imageInfo, null, 2);
 let blob = new Blob([jsonString], {type: "application/json"});
 let a = document.createElement('a');
 a.href = URL.createObjectURL(blob);
-a.download = 'card_images_info.json';
+a.download = 'snap_cards.json';
 a.textContent = 'download json';
 a.style.display = 'block';
 document.body.appendChild(a);

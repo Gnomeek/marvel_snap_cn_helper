@@ -1,19 +1,28 @@
-import { useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
-import { useShallow } from "zustand/shallow";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import Grid from "@mui/material/Grid2";
+import Card, { CardProps } from "./Card";
+import { useMemo, useState } from "react";
+import { useShallow } from "zustand/react/shallow";
 import { useCardState } from "@/hooks/cards";
-import { CardProps } from "@/components/Card";
+import {
+  Accordion as MuiAccordion,
+  AccordionSummary,
+  AccordionDetails,
+  Button,
+  SxProps,
+  Theme,
+  Typography,
+  Stack,
+} from "@mui/material";
 
 export type AccordionProps = {
   title: string;
-  children: React.ReactNode;
   cards: CardProps[];
   defaultOpen?: boolean;
 };
 
 export default function Accordion({
   title,
-  children,
   cards,
   defaultOpen = false,
 }: AccordionProps) {
@@ -25,36 +34,53 @@ export default function Accordion({
     }))
   );
 
+  const styles: { [key: string]: SxProps<Theme> } = useMemo(
+    () => ({
+      titleContainer: {
+        display: "flex",
+        flexDirection: "row",
+        gap: "12px",
+      },
+    }),
+    []
+  );
+
   return (
-    <div className="border rounded-lg overflow-hidden">
-      <div className="w-full px-4 py-3 flex justify-between items-center bg-gray-50 hover:bg-gray-100">
-        <div className="flex items-center gap-2">
-          <span className="font-medium text-gray-700">{title}</span>
-          <button
-            className="inline-block px-3 py-1 rounded-full text-black text-xs font-light shadow-md"
-            onClick={() => {
+    <MuiAccordion
+      expanded={isOpen}
+      onChange={(_, expanded) => {
+        setIsOpen(expanded);
+      }}
+    >
+      <AccordionSummary
+        expandIcon={<ArrowDropDownIcon />}
+        id={`${title}-header`}
+        sx={styles.titleContainer}
+      >
+        <Stack direction="row" spacing={2}>
+          <Typography fontSize={"24px"}>{title}</Typography>
+          <Button
+            variant="contained"
+            size="small"
+            onClick={(e) => {
+              e.stopPropagation();
               setObtained(cards.map((card) => card.name));
               setIsOpen(true);
             }}
           >
             添加全部
-          </button>
-        </div>
-        <ChevronDownIcon
-          className={`w-5 h-5 text-gray-500 transition-transform duration-200 ${
-            isOpen ? "transform rotate-180" : ""
-          }`}
-          onClick={() => setIsOpen(!isOpen)}
-        />
-      </div>
-
-      <div
-        className={`transition-all duration-200 ease-in-out ${
-          isOpen ? "opacity-100" : "h-0 opacity-0"
-        } overflow-y-auto`}
-      >
-        <div className="p-4 bg-white">{children}</div>
-      </div>
-    </div>
+          </Button>
+        </Stack>
+      </AccordionSummary>
+      <AccordionDetails>
+        <Grid container spacing={1}>
+          {cards.map((card, index) => (
+            <Grid key={index} size={{ xs: 6, sm: 3, md: 2, lg: 1.5 }}>
+              <Card {...card} />
+            </Grid>
+          ))}
+        </Grid>
+      </AccordionDetails>
+    </MuiAccordion>
   );
 }
