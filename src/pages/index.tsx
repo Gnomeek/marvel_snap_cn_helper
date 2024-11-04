@@ -13,13 +13,17 @@ export default function Home() {
     }))
   );
   const sortedGroups = groupedCards(groupBy, selectedCollections);
+
   return (
     <AppLayout>
-    <Stack spacing={2}>
-      {sortedGroups.map(([key, cards]) => (
-        <Accordion key={key} title={groupedCardsTitle(groupBy, key)} cards={cards}>
-        </Accordion>
-      ))}
+      <Stack spacing={2}>
+        {sortedGroups.map(([key, cards]) => (
+          <Accordion
+            key={key}
+            title={groupedCardsTitle(groupBy, key)}
+            cards={cards}
+          ></Accordion>
+        ))}
       </Stack>
     </AppLayout>
   );

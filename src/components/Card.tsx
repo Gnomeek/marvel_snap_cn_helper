@@ -94,6 +94,7 @@ export default function Card({ name, src, collection, tier }: CardProps) {
           component="img"
           image={src}
           alt={name}
+          draggable={false}
           sx={styles.cardMedia}
         ></CardMedia>
         <CardContent sx={styles.cardContent}>
