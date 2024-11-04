@@ -9,7 +9,7 @@ export enum CardStateEnum {
 }
 
 export function cardStateEnumToString(cardState: CardStateEnum) {
-  return cardState === CardStateEnum.OBTAINED ? "已拥有" : cardState === CardStateEnum.VARIANT_ONLY ? "仅拥有变体" : "未拥有";
+  return cardState === CardStateEnum.OBTAINED ? "已拥有" : cardState === CardStateEnum.VARIANT_ONLY ? "仅变体" : "未拥有";
 }
 
 type cardState = {

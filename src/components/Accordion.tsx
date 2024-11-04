@@ -93,7 +93,7 @@ export default function Accordion({
             const isSelected = selectedCardState.includes(status);
             return (
               isSelected && (
-                <Grid key={index} size={{ xs: 6, sm: 3, md: 2, lg: 1 }}>
+                <Grid key={index} size={{ xs: 4, sm: 3, md: 2, lg: 1 }}>
                   <Card {...card} />
                 </Grid>
               )
