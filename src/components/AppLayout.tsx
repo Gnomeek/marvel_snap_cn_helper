@@ -19,11 +19,12 @@ import {
   Typography,
 } from "@mui/material";
 import { useShallow } from "zustand/shallow";
-import { useMemo, useRef } from "react";
+import { useMemo, useRef, useState } from "react";
 import { Collection } from "@/utils/types";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const contentRef = useRef<HTMLDivElement>(null);
+  const [isInfoOpen, setIsInfoOpen] = useState(true);
   // const [isSharing, setIsSharing] = useState(false);
 
   const {
@@ -57,7 +58,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
       controlBar: {
         display: "flex",
         flexDirection: "row",
-        // justifyContent: "space-between",
+        justifyContent: "space-between",
         alignItems: "center",
         textAlign: "center",
       },
@@ -161,15 +162,17 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           </Tooltip> */}
         </Box>
       </Box>
-      <Alert severity="info">
-        <Typography>点击卡片来切换拥有状态</Typography>
-        <Typography>
-          蓝色，绿色，白色分别代表仅拥有变体，已拥有，未拥有
-        </Typography>
-        <Typography>
-          💩😑😯🤩😍分别代表1-5星评分，评分来自B站up小橘子
-        </Typography>
-      </Alert>
+      {isInfoOpen && (
+        <Alert severity="info" onClose={() => setIsInfoOpen(false)}>
+          <Typography>点击卡片来切换拥有状态</Typography>
+          <Typography>
+            蓝色，绿色，白色分别代表仅拥有变体，已拥有，未拥有
+          </Typography>
+          <Typography>
+            💩😑😯🤩😍分别代表1-5星评分，评分来自B站up小橘子
+          </Typography>
+        </Alert>
+      )}
       <Box ref={contentRef}>{children}</Box>
     </Box>
   );
