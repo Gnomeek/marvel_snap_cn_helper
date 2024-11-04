@@ -93,8 +93,6 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               <FormControl fullWidth>
                 <InputLabel>分组种类</InputLabel>
                 <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
                   value={groupBy}
                   label="Group By"
                   onChange={(e) => setGroupBy(e.target.value)}
@@ -137,7 +135,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
                   onChange={(e) =>
                     setSelectedCardState(e.target.value as CardStateEnum[])
                   }
-                  input={<OutlinedInput label="Tag" />}
+                  input={<OutlinedInput label="拥有状态" />}
                   renderValue={(selected) =>
                     selected.map(cardStateEnumToString).join(", ")
                   }
