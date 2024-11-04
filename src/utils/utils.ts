@@ -65,3 +65,7 @@ export const groupedCards = (groupby: string, selectedCollections: Collection[])
 export const groupedCardsTitle = (groupby: string, key: string) => {
   return groupby === "tier" ? getTierStars(Number(key)) : poolToCollection(key);
 };
+
+export function getOrDefault<K, V>(map: Map<K, V>, key: K, defaultValue: V): V {
+  return map.has(key) ? map.get(key)! : defaultValue;
+}

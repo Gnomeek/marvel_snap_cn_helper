@@ -5,7 +5,6 @@ import {
 } from "@/hooks/cards";
 import {
   Box,
-  Divider,
   FormControl,
   InputLabel,
   MenuItem,
@@ -15,13 +14,20 @@ import {
   OutlinedInput,
   ListItemText,
   Checkbox,
+  Tooltip,
+  Alert,
+  Typography,
 } from "@mui/material";
 import { useShallow } from "zustand/shallow";
-import { useMemo } from "react";
+import { useMemo, useRef, useState } from "react";
 import { Collection } from "@/utils/types";
 import ShareIcon from "@mui/icons-material/Share";
+import { IconButton } from "@mui/material";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [isSharing, setIsSharing] = useState(false);
+
   const {
     groupBy,
     setGroupBy,
@@ -49,7 +55,6 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         padding: "12px",
         gap: "12px",
         border: "2px solid #e0e0e0",
-        height: "90%",
       },
       controlBar: {
         display: "flex",
@@ -69,6 +74,12 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     }),
     []
   );
+
+  const handleShare = async () => {
+    setIsSharing(true);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    setIsSharing(false);
+  };
 
   return (
     <Box sx={styles.container}>
@@ -129,11 +140,19 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           </FormControl>
         </Box>
         <Box sx={styles.rightControls}>
-          <ShareIcon />
+          <Tooltip title="开发中">
+            <IconButton onClick={handleShare} disabled={isSharing}>
+              <ShareIcon />
+            </IconButton>
+          </Tooltip>
         </Box>
       </Box>
-      <Divider />
-      <Box>{children}</Box>
+      <Alert severity="info">
+        <Typography>蓝色代表仅拥有变体，绿色代表已拥有，灰色代表未拥有</Typography>
+        <Typography>点击卡片来切换拥有状态</Typography>
+        <Typography>💩😑😯🤩😍分别代表1-5星评分，评分来自B站up小橘子</Typography>
+      </Alert>
+      <Box ref={contentRef}>{children}</Box>
     </Box>
   );
 }

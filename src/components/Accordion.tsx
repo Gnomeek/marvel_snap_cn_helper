@@ -14,6 +14,7 @@ import {
   Typography,
   Stack,
 } from "@mui/material";
+import { getOrDefault } from "@/utils/utils";
 
 export type AccordionProps = {
   title: string;
@@ -24,13 +25,15 @@ export type AccordionProps = {
 export default function Accordion({
   title,
   cards,
-  defaultOpen = false,
+  defaultOpen = true,
 }: AccordionProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
-  const { setObtained } = useCardState(
+  const { setObtained, cardStates, selectedCardState } = useCardState(
     useShallow((state) => ({
       setObtained: state.setObtained,
+      cardStates: state.cardStates,
+      selectedCardState: state.selectedCardState,
     }))
   );
 
@@ -57,7 +60,7 @@ export default function Accordion({
         id={`${title}-header`}
         sx={styles.titleContainer}
       >
-        <Stack direction="row" spacing={2}>
+        <Stack direction="row" spacing={2} className="control-buttons">
           <Typography fontSize={"24px"}>{title}</Typography>
           <Button
             variant="contained"
@@ -85,11 +88,17 @@ export default function Accordion({
       </AccordionSummary>
       <AccordionDetails>
         <Grid container spacing={1}>
-          {cards.map((card, index) => (
-            <Grid key={index} size={{ xs: 6, sm: 3, md: 2, lg: 1.5 }}>
-              <Card {...card} />
-            </Grid>
-          ))}
+          {cards.map((card, index) => {
+            const status = getOrDefault(cardStates, card.name, CardStateEnum.NOT_OBTAINED);
+            const isSelected = selectedCardState.includes(status);
+            return (
+              isSelected && (
+                <Grid key={index} size={{ xs: 6, sm: 3, md: 2, lg: 1 }}>
+                  <Card {...card} />
+                </Grid>
+              )
+            );
+          })}
         </Grid>
       </AccordionDetails>
     </MuiAccordion>

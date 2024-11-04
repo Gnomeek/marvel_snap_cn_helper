@@ -1,5 +1,5 @@
 import { Collection } from "@/utils/types";
-import { getTierStars } from "@/utils/utils";
+import { getOrDefault, getTierStars } from "@/utils/utils";
 import {
   Card as MuiCard,
   CardActionArea,
@@ -24,12 +24,10 @@ export type CardProps = {
 
 export default function Card({ name, src, collection, tier }: CardProps) {
   const [isClient, setIsClient] = useState(false);
-
-  const { cardStates, setCardState, selectedCardState } = useCardState(
+  const { cardStates, setCardState } = useCardState(
     useShallow((state) => ({
       cardStates: state.cardStates,
       setCardState: state.setCardState,
-      selectedCardState: state.selectedCardState,
     }))
   );
 
@@ -38,9 +36,7 @@ export default function Card({ name, src, collection, tier }: CardProps) {
   }, []);
 
   const status = useMemo(() => {
-    return cardStates.has(name)
-      ? cardStates.get(name)
-      : CardStateEnum.NOT_OBTAINED;
+    return getOrDefault(cardStates, name, CardStateEnum.NOT_OBTAINED);
   }, [cardStates, name]);
 
   const backgroundColor = isClient
@@ -50,6 +46,12 @@ export default function Card({ name, src, collection, tier }: CardProps) {
       ? blue[300]
       : "white"
     : "white";
+
+  const greyScale = isClient
+    ? status === CardStateEnum.NOT_OBTAINED
+      ? "grayscale(100%)"
+      : "none"
+    : "none";
 
   const styles: { [key: string]: SxProps<Theme> } = useMemo(
     () => ({
@@ -63,8 +65,11 @@ export default function Card({ name, src, collection, tier }: CardProps) {
         alignItems: "center",
         textAlign: "center",
       },
+      cardMedia: {
+        filter: greyScale,
+      },
     }),
-    [backgroundColor]
+    [backgroundColor, greyScale]
   );
 
   const tierStars = useMemo(() => getTierStars(tier), [tier]);
@@ -83,17 +88,19 @@ export default function Card({ name, src, collection, tier }: CardProps) {
   );
 
   return (
-    status &&
-    selectedCardState.includes(status) && (
-      <MuiCard sx={styles.container}>
-        <CardActionArea onClick={() => onClickHandler(name)}>
-          <CardMedia component="img" image={src} alt={name}></CardMedia>
-          <CardContent sx={styles.cardContent}>
-            <Chip label={collection} size="small" color="primary" />
-            <Typography fontSize={"20px"}>{tierStars}</Typography>
-          </CardContent>
-        </CardActionArea>
-      </MuiCard>
-    )
+    <MuiCard sx={styles.container}>
+      <CardActionArea onClick={() => onClickHandler(name)}>
+        <CardMedia
+          component="img"
+          image={src}
+          alt={name}
+          sx={styles.cardMedia}
+        ></CardMedia>
+        <CardContent sx={styles.cardContent}>
+          <Chip label={collection} size="small" color="primary" />
+          <Typography fontSize={"20px"}>{tierStars}</Typography>
+        </CardContent>
+      </CardActionArea>
+    </MuiCard>
   );
 }
