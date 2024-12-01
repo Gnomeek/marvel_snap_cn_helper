@@ -1010,6 +1010,11 @@
     "pool": "6"
   },
   {
+    "name": "Martyr",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Martyr.png",
+    "pool": "6"
+  },
+  {
     "name": "Zabu",
     "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Zabu.png",
     "pool": "6"
@@ -1027,6 +1032,11 @@
   {
     "name": "MobiusMMobius",
     "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MobiusMMobius.png",
+    "pool": "6"
+  },
+  {
+    "name": "ManThing",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/ManThing.png",
     "pool": "6"
   },
   {
@@ -1090,8 +1100,23 @@
     "pool": "7"
   },
   {
+    "name": "BlackKnight",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/BlackKnight.png",
+    "pool": "7"
+  },
+  {
+    "name": "NicoMinoru",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/NicoMinoru.png",
+    "pool": "7"
+  },
+  {
     "name": "Mirage",
     "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Mirage.png",
+    "pool": "7"
+  },
+  {
+    "name": "ElsaBloodstone",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/ElsaBloodstone.png",
     "pool": "7"
   },
   {
@@ -1105,13 +1130,33 @@
     "pool": "7"
   },
   {
+    "name": "WerewolfByNight",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/WerewolfByNight.png",
+    "pool": "7"
+  },
+  {
     "name": "JeanGrey",
     "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/JeanGrey.png",
     "pool": "7"
   },
   {
+    "name": "Daken",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Daken.png",
+    "pool": "7"
+  },
+  {
+    "name": "Gladiator",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Gladiator.png",
+    "pool": "7"
+  },
+  {
     "name": "HighEvolutionary",
     "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/HighEvolutionary.png",
+    "pool": "7"
+  },
+  {
+    "name": "MsMarvel",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/MsMarvel.png",
     "pool": "7"
   },
   {
@@ -1137,6 +1182,16 @@
   {
     "name": "Kang",
     "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Kang.png",
+    "pool": "7"
+  },
+  {
+    "name": "LadyDeathstrike",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/LadyDeathstrike.png",
+    "pool": "7"
+  },
+  {
+    "name": "Annihilus",
+    "src": "https://marvelsnap.res.netease.com/pc/qt/20240717110656/data/images/cards/Annihilus.png",
     "pool": "7"
   },
   {
